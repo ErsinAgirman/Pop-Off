@@ -12,5 +12,6 @@ namespace EntityLayer.Concrete
         public string AuthorName { get; set; }
         public string AuthorImage { get; set; }
         public string AuthorAbout { get; set; }
+        public ICollection<Blog> Blogs { get; set; }
     }
 }
