@@ -51,7 +51,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Absctract\IAboutDal.cs" />
+    <Compile Include="Absctract\IAdminDal.cs" />
+    <Compile Include="Absctract\IAuthor.cs" />
+    <Compile Include="Absctract\IBlogDal.cs" />
+    <Compile Include="Absctract\ICategoryDal.cs" />
+    <Compile Include="Absctract\ICommentDal.cs" />
+    <Compile Include="Absctract\IContactDal.cs" />
+    <Compile Include="Absctract\IRepository.cs" />
     <Compile Include="Concrete\Context.cs" />
+    <Compile Include="Concrete\Repository.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -59,9 +68,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Absctract\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
       <Project>{bbf38311-f40a-47ed-9c51-7cf74323dbd1}</Project>
